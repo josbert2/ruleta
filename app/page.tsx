@@ -75,7 +75,7 @@ export default function Home() {
       {/* Layout principal - pantalla dividida */}
       <div className="h-full w-full flex flex-col-reverse md:flex-row">
         {/* Lado izquierdo - Ruleta */}
-        <div className="relative h-[50%] md:h-full w-full md:w-1/2 flex items-start md:items-center justify-center md:justify-start overflow-visible z-10">
+        <div className="relative h-[55%] md:h-full w-full md:w-1/2 flex items-start md:items-center justify-center md:justify-start overflow-visible z-10">
           <div 
             className={`absolute transition-all duration-1000 ease-in-out transform
               ${isWheelSpinning 
@@ -91,7 +91,7 @@ export default function Home() {
         </div>
 
         {/* Lado derecho - Contenido */}
-        <div className="h-[50%] md:h-full w-full md:w-1/2 flex flex-col items-center justify-end md:justify-center px-6 relative z-10 pb-8 md:pb-0">
+        <div className="h-[45%] md:h-full w-full md:w-1/2 flex flex-col items-center justify-end md:justify-center px-6 relative z-10 pb-8 md:pb-0">
           <div className="max-w-md space-y-6 text-center pt-24 md:pt-20">
             {/* FunPark Logo */}
             <div className="flex justify-center mb-6">
