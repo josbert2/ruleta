@@ -217,7 +217,8 @@ export function SpinWheel({ onResult, onSpinStart }: SpinWheelProps) {
                       x={textX}
                       y={textY}
                       fill={segment.textColor}
-                      fontSize={segment.label.length > 8 ? "2.2" : "4"}
+                      fontSize={segment.label.length > 8 ? "3.2" : "4.5"}
+                      fontWeight="bold"
                       textAnchor="middle"
                       dominantBaseline="middle"
                       transform={`rotate(${textAngle + 90}, ${textX}, ${textY})`}
@@ -225,7 +226,7 @@ export function SpinWheel({ onResult, onSpinStart }: SpinWheelProps) {
                         fontFamily: "var(--font-rubik)",
                         paintOrder: "stroke",
                         stroke: "#4c1d95", // Darker purple stroke
-                        strokeWidth: "0.2px",
+                        strokeWidth: "0.3px",
                         strokeLinecap: "round",
                         strokeLinejoin: "round"
                       }}
@@ -250,7 +251,7 @@ export function SpinWheel({ onResult, onSpinStart }: SpinWheelProps) {
         <div 
           className="absolute inset-0 z-50 flex items-center justify-center pointer-events-none"
           style={{
-            left: isSpinning ? "-7%" : "0%",
+            left: isSpinning ? "0%" : "0%",
             top: isSpinning ? "0%" : "0%",
           }}
         >

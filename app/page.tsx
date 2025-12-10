@@ -73,39 +73,26 @@ export default function Home() {
       </div>
 
       {/* Layout principal - pantalla dividida */}
-      <div className="h-full w-full flex flex-col md:flex-row">
+      <div className="h-full w-full flex flex-col-reverse md:flex-row">
         {/* Lado izquierdo - Ruleta */}
-        <div className="relative h-[55%] md:h-full w-full md:w-1/2 flex items-center justify-center md:justify-start overflow-visible z-10">
+        <div className="relative h-[50%] md:h-full w-full md:w-1/2 flex items-start md:items-center justify-center md:justify-start overflow-visible z-10">
           <div 
             className={`absolute transition-all duration-1000 ease-in-out transform
               ${isWheelSpinning 
-                ? "-left-[150px] md:-left-[350px] lg:-left-[450px]" 
+                ? "left-1/2 -translate-x-1/2 md:translate-x-0 md:-left-[350px] lg:-left-[450px]" 
                 : "left-1/2 -translate-x-1/2 md:translate-x-0 md:-left-[150px] lg:-left-[200px]"
-              } top-[10%] md:top-auto`
+              } top-[0%] md:top-auto`
             }
           >
             <SpinWheel onResult={handleResult} onSpinStart={handleSpinStart} />
           </div>
-
-          <div className="absolute right-4 bottom-4 md:right-20 md:top-1/2 md:-translate-y-1/2 hidden md:block">
-            <ChevronLeft
-              className="w-16 h-16 md:w-28 md:h-28 text-[#f97316] drop-shadow-[0_0_30px_rgba(255,255,255,0.8)]"
-              strokeWidth={3}
-            />
-          </div>
           
-          {/* Mobile Arrow (Down) */}
-           <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 md:hidden z-20">
-            <ChevronLeft
-              className="w-12 h-12 text-[#f97316] drop-shadow-[0_0_30px_rgba(255,255,255,0.8)] -rotate-90"
-              strokeWidth={3}
-            />
-          </div>
+         
         </div>
 
         {/* Lado derecho - Contenido */}
-        <div className="h-[45%] md:h-full w-full md:w-1/2 flex flex-col items-center justify-start md:justify-center px-6 relative z-10">
-          <div className="max-w-md space-y-6 text-center pt-10 md:pt-20">
+        <div className="h-[50%] md:h-full w-full md:w-1/2 flex flex-col items-center justify-end md:justify-center px-6 relative z-10 pb-8 md:pb-0">
+          <div className="max-w-md space-y-6 text-center pt-24 md:pt-20">
             {/* FunPark Logo */}
             <div className="flex justify-center mb-6">
               <img 
