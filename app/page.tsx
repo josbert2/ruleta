@@ -104,12 +104,12 @@ export default function Home() {
 
             {/* New Title */}
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-black leading-none mb-2 drop-shadow-md" style={{ fontFamily: "var(--font-paytone)" }}>
-              <span className="text-white inline-block" style={{ textShadow: "2px 2px 0px #7c3aed" }}>¡PREMIOS</span>{" "}
-              <span className="text-[#facc15] inline-block" style={{ textShadow: "2px 2px 0px #7c3aed" }}>INCREÍBLES!</span>
+              <span className="text-white inline-block uppercase" style={{ textShadow: "2px 2px 0px #7c3aed" }}>¡Prueba tu !</span>{" "}
+              <span className="text-[#facc15] inline-block uppercase" style={{ textShadow: "2px 2px 0px #7c3aed" }}>Suerte!</span>
             </h1>
 
             <p className="text-white/90 text-lg md:text-xl font-medium max-w-lg mx-auto leading-relaxed">
-              ¡Prueba tu suerte! Gira la ruleta y podrás ganar premios exclusivos para tu próxima visita a FunPark.
+              ¡Gira la ruleta y gana una entrada exclusiva para tu visita a Funpark!
             </p>
           </div>
         </div>

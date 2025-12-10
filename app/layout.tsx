@@ -16,7 +16,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ruleta de Premios | ¡Gira y Gana!",
   description: "¡Prueba tu suerte y gana premios exclusivos!",
-    generator: 'v0.app'
+    generator: 'v0.app',
+  icons: {
+    icon: 'https://tickets.funpark.cl/images/cache/thumb_260_130/proveedorlogo/6554d4be720e1981968092.png',
+  },
 }
 
 const titanOne = Titan_One({

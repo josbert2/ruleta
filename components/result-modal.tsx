@@ -73,11 +73,11 @@ export function ResultModal({ result, onClose }: ResultModalProps) {
           style={{ animationDelay: "0.9s" }}
         />
 
-        <h2 className="text-4xl md:text-5xl font-black mb-4 text-white drop-shadow-lg">
-          {isWinner ? "¡GANASTE!" : "¡PERDISTE!"}
+        <h2 className="text-2xl md:text-4xl text-center justify-center font-black mb-4 text-white drop-shadow-lg">
+          {isWinner ? "🎉¡GANASTE!🎉" : "¡PERDISTE!"}
         </h2>
         <p className="text-xl mb-8 text-white/90 font-medium">
-          {isWinner ? "Felicidades, has ganado un premio increible" : "La proxima sera, sigue intentando"}
+          {isWinner ? "Felicidades, has ganado una entrada" : "La proxima será, sigue intentando"}
         </p>
         <button
           onClick={onClose}
